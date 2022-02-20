@@ -1,5 +1,5 @@
 # WordPress Basic Theme Developments (theme_dev3)
-WordPress basic theme development
+WordPress basic custom theme development
 
 # Featherlight Box Usages.
 Featherlight demo: https://noelboss.github.io/featherlight/
