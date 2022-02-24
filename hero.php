@@ -7,7 +7,7 @@
             <h1><a href="<?php echo site_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
             <hr>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 mb-5">
             <div class="navigation">
               <?php 
                 wp_nav_menu(

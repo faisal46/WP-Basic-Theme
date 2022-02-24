@@ -10,3 +10,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: blog, education
 Text Domain: alpha
 */
+
+/**
+* Header menu
+*/
+#topmenucontainer li{
+    padding: 0px 15px;
+}
+#topmenucontainer li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #4c4848;
+    font-weight: 500;
+}
+#topmenucontainer .current-menu-item a{
+    color:#0a58ca;
+}
+
+/**
+* Post title
+*/
+.post-title a{
+    text-decoration: none;
+    color: #4c4848;
+    text-transform: capitalize;
+}
