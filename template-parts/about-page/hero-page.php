@@ -1,8 +1,5 @@
-<?php
-$alpha_feature_image = get_the_post_thumbnail_url( null, 'large' );
-?>
 <!-- header start -->
- <div class="header page-header" style="background-image: url(<?php echo $alpha_feature_image; ?>);">
+ <div class="header page-header">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">

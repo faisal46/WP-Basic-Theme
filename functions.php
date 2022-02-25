@@ -73,3 +73,20 @@ function alpha_menu_item_class( $classes ) {
   return $classes;
 }
 add_filter( 'nav_menu_css_class', 'alpha_menu_item_class', 10, 2 );
+
+/**
+ * Page template banner
+ */
+function alpha_page_template_banner(){
+  if ( is_page() ){
+    $alpha_feature_image = get_the_post_thumbnail_url( null, 'large' );
+    ?>
+    <style>
+      .page-header{
+        background-image: url(<?php echo $alpha_feature_image; ?>);
+      }
+    </style>
+    <?php
+  }
+}
+add_action( 'wp_head', 'alpha_page_template_banner' );
