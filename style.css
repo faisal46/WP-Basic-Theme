@@ -11,27 +11,46 @@ Tags: blog, education
 Text Domain: alpha
 */
 
-/**
-* Header menu
-*/
-#topmenucontainer li{
+/* Heading */
+.header h1 a{
+    color: #4c4848;
+    text-decoration: none;
+
+}
+
+/* Header menu */
+#topmenucontainer li {
     padding: 0px 15px;
 }
-#topmenucontainer li a{
+#topmenucontainer li a {
     text-decoration: none;
     font-size: 22px;
     color: #4c4848;
     font-weight: 500;
 }
-#topmenucontainer .current-menu-item a{
+#topmenucontainer
+.current-menu-item 
+a {
     color:#0a58ca;
 }
 
-/**
-* Post title
-*/
-.post-title a{
+/* Post title */
+.post-title a {
     text-decoration: none;
     color: #4c4848;
     text-transform: capitalize;
 }
+
+/* Page header css */
+.page-header {
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    padding: 100px 0px;
+}
+.page-header h1 a{
+    color: #000;
+    text-decoration: none;
+
+}
+    
