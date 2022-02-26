@@ -59,4 +59,14 @@ a {
     text-decoration: none;
 
 }
+
+/* 404 error */
+.page-not-found{
+    height: 40vh;
+}
+.page-not-found h1{
+    font-weight: bold;
+    font-family: IMPACT;
+    font-size: 80px;
+}
     
