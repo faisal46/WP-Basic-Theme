@@ -26,12 +26,13 @@ function alpha_bootstraping(){
       'flex-width'  => true,
       'flex-height'  => true,
     );
-    add_theme_support( "custom-header", $alpha_custom_header_details );
+    add_theme_support( 'custom-header', $alpha_custom_header_details );
     $alpha_custom_logo_details = array(
       'width'  => 100,
       'height'  => 100,
     );
-    add_theme_support( "custom-logo", $alpha_custom_logo_details );
+    add_theme_support( 'custom-logo', $alpha_custom_logo_details );
+    add_theme_support( 'custom-background' );
     register_nav_menu( 'topmenu', __( 'Top Menu', 'alpha' ) );
     register_nav_menu( 'footermenu', __( 'Footer Menu', 'alpha' ) );
 }
