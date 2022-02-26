@@ -23,8 +23,8 @@ function alpha_bootstraping(){
       'default-text-color'  => '#dd3333',
       'width'  => 1200,
       'height'  => 600,
-      'flex-width'  => 1200,
-      'flex-height'  => 600,
+      'flex-width'  => true,
+      'flex-height'  => true,
     );
     add_theme_support( "custom-header", $alpha_custom_header_details );
     $alpha_custom_logo_details = array(
