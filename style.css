@@ -1,6 +1,6 @@
 /*
 Theme Name: Alpha
-Theme URI: 
+Theme URI: https://github.com/faisal46/wp-basic-theme
 Author: Faisal
 Author URI: http://rajtechbd.com/
 Description: Our First HyperMinimal Theme
@@ -12,7 +12,7 @@ Text Domain: alpha
 */
 
 /* Header area */
-.header h1 a{
+.header h1 a {
     color: #4c4848;
     text-decoration: none;
 

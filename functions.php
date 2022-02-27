@@ -1,8 +1,8 @@
 <?php 
 
-if ( site_url() == 'http://localhost/theme_dev3' ){
+if ( site_url() == 'http://localhost/theme_dev3' ) {
   define( 'VERSION', time() );
-}else{
+} else {
   define( 'VERSION', wp_get_theme()->get( 'Version' ) );
 }
 
@@ -13,7 +13,7 @@ function change_case( $text ){
 /*
 * After Setup Theme bootstraping
 */
-function alpha_bootstraping(){
+function alpha_bootstraping() {
     load_theme_textdomain( 'alpha' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'title-tag' );
@@ -41,7 +41,7 @@ add_action( 'after_setup_theme', 'alpha_bootstraping' );
 /** 
 * Assets management
 */
-function alpha_assets(){
+function alpha_assets() {
     wp_enqueue_style( 'alpha', get_stylesheet_uri(), null, VERSION );
     wp_enqueue_style( 'bootstrap', '//cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' );
     wp_enqueue_style( 'featherlight-css', '//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css' );
@@ -51,7 +51,7 @@ function alpha_assets(){
 }
 add_action( 'wp_enqueue_scripts', 'alpha_assets' );
 
-function alpha_sidebar(){  
+function alpha_sidebar() {  
  register_sidebar(
   array(
     'name'           => sprintf( __( 'Single Post Sidebar', 'alpha' ) ),
@@ -66,7 +66,7 @@ function alpha_sidebar(){
 }
 add_action( 'widgets_init', 'alpha_sidebar' );
 
-function alpha_the_excerpt( $excerpt ){
+function alpha_the_excerpt( $excerpt ) {
   if( !post_password_required() ){
      return $excerpt;
   }else{
@@ -94,8 +94,8 @@ add_filter( 'nav_menu_css_class', 'alpha_menu_item_class', 10, 2 );
  * Page template banner
  * Homepage banner set use customizer
  */
-function alpha_page_template_banner(){
-  if ( is_page() ){
+function alpha_page_template_banner() {
+  if ( is_page() ) {
     $alpha_feature_image = get_the_post_thumbnail_url( null, 'large' );
     ?>
     <style>
@@ -106,7 +106,7 @@ function alpha_page_template_banner(){
     <?php
   }
 
-  if ( is_front_page() ){
+  if ( is_front_page() ) {
 
     ?>
     <style>
