@@ -91,7 +91,7 @@ function alpha_menu_item_class( $classes ) {
 add_filter( 'nav_menu_css_class', 'alpha_menu_item_class', 10, 2 );
 
 /**
- * Page template banner
+ * About page template banner
  * Homepage banner set use customizer
  */
 function alpha_page_template_banner() {
