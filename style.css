@@ -76,3 +76,19 @@ a {
     font-size: 80px;
 }
     
+
+/* Author section */
+.author-section{
+    border: 2px solid #ccc;
+}
+.author-section img{
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 5px solid #fff;
+}
+.author-section h3{
+    text-transform: capitalize;
+}
+.author-section p{
+    text-align: justify;
+}

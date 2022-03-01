@@ -54,6 +54,20 @@
           <?php } ?>
         </div>
 
+        <!-- Author section start -->
+         <div class="author-section p-3 my-5">
+          <div class="row">
+          <div class="col-md-2">
+          <?php echo get_avatar( get_the_author_meta( 'ID' ) ); ?>
+          </div>
+          <div class="col-md-10">
+            <h3><?php echo get_the_author_meta( 'display_name' ); ?></h3>
+            <p><?php echo get_the_author_meta( 'description' ); ?></p>
+          </div>
+          </div>
+         </div>
+        <!-- Author section.end -->
+
       </div>
     </div>
     <?php  } ?>
