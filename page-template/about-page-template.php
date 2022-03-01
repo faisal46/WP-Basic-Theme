@@ -8,7 +8,7 @@ get_header(); ?>
 <?php get_template_part( "/template-parts/about-page/hero-page" ); ?>
   
   <!-- post start -->
-  <div class="posts">
+  <div <?php post_class(); ?> >
   <?php
     while( have_posts() ){
       the_post();

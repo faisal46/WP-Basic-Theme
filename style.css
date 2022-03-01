@@ -60,6 +60,12 @@ a {
 
 }
 
+/* Dashicons */
+.dashicons{
+    color:#0a58ca;
+    font-size: 100px;
+}
+
 /* 404 error */
 .page-not-found{
     height: 40vh;

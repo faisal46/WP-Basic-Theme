@@ -9,7 +9,7 @@
       while( have_posts() ){
         the_post();
     ?>
-    <div class="post" <?php post_class(); ?>>
+    <div <?php post_class(); ?>>
       <div class="container">
 
       <div class="row">
@@ -25,9 +25,29 @@
             <p class="post-author"><strong><?php the_author(); ?></strong></p>
             <p class="post-date"><?php echo get_the_date(); ?></p>
             <p class="post-category"><?php the_category(); ?></p>
+            <?php echo get_the_tag_list("<ul><li>","</li><li>", "</li></ul>"); ?>
+
+            <!-- Post formats check -->
             <?php 
-             echo get_the_tag_list("<ul><li>","</li><li>", "</li></ul>");
-              ?>
+              $alpha_formats = get_post_format();
+              if ( $alpha_formats == 'gallery' ) {
+                echo '<span class="dashicons dashicons-format-gallery"></span>';
+              } elseif ( $alpha_formats == 'image' ) {
+                echo '<span class="dashicons dashicons-format-image"></span>';
+              } elseif ( $alpha_formats == 'video' ) {
+                echo '<span class="dashicons dashicons-format-video"></span>';
+              } elseif ( $alpha_formats == 'audio' ) {
+                echo '<span class="dashicons dashicons-format-audio"></span>';
+              } elseif ( $alpha_formats == 'link' ) {
+                echo '<span class="dashicons dashicons-admin-links"></span>';
+              } elseif ( $alpha_formats == 'quote' ) {
+                echo '<span class="dashicons dashicons-format-quote"></span>';
+              } elseif ( $alpha_formats == 'status' ) {
+                echo '<span class="dashicons dashicons-post-status"></span>';
+              } elseif ( $alpha_formats == 'chat' ) {
+                echo '<span class="dashicons dashicons-format-chat"></span>';
+              }
+            ?>
           </div>
 
           <div class="col-md-8 overflow-hidden">

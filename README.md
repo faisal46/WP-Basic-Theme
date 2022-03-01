@@ -5,3 +5,5 @@ WordPress basic custom theme development
 Featherlight demo: https://noelboss.github.io/featherlight/
 
 Featherlight demo: https://github.com/noelboss/featherlight/
+
+WordPress dashicons cdn : https://developer.wordpress.org/resource/dashicons/#migrate
